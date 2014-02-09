@@ -28,6 +28,9 @@ int main(int argc, const char * argv[])
         }
         
         Item *item = [[Item alloc] init];
+        item.firstName = @"Raluca"; //the same with line 32
+        [item setFirstName: @"Raluca"];
+        NSLog(@"frist name %@", [item firstName]);
         NSLog(@"dump %@", item);
         //NSLog(@" %@ %@ %@ %d", [item itemName], [item dateCreated], [item serialNumber], [item valueInDollars]);
         [item setvalueInDollars:12];

@@ -15,6 +15,7 @@
     int valueInDollars;
     NSDate *dateCreated;
 }
+@property(nonatomic, weak) NSString *firstName;
 //setter for item
 - (void) setItemName:(NSString *) str;
 
